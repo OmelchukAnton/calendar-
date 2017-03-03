@@ -1,0 +1,348 @@
+* {
+	line-height: 25px;
+	background-size: cover;
+
+}
+
+.conteinerhead {
+	height: 120px;
+	padding: 30px 50px 0px 50px;
+	color: grey;
+
+
+
+
+}
+.headline {
+	display: flex;
+	width: 100%;
+	font-size: 20px;
+
+}
+.box {
+	display: inline-flex;
+	flex-grow: 1;
+}
+
+.rightline {
+	display: flex;
+
+}
+
+.box1 {
+	transform: rotate(-90deg);
+	margin-bottom: 3px;
+}
+
+.box2 {
+	padding-left: 30px;
+	color: black;
+}
+
+.box3 {
+	justify-content: center;
+	height: 20px;
+	padding-right: 10px;
+	transform: rotate(-180deg);
+}
+
+.box4 {
+	padding: 0px 5px;
+	border: 1px solid grey;
+	border-top: solid  grey;
+}
+.box5 {
+	margin-left: 20px;
+	font-weight: bolder;
+	transform: rotate(-90deg);
+}
+
+.containerDays{
+	padding-top: 20px;
+  	display: flex;
+  	justify-content: space-around;
+}
+
+#oneVoice {
+	background-color: #56bbea;
+	color: white;
+	border-radius: 2px;
+	padding-left: 10px;
+}
+
+#twoVoice {
+	background-color: #10e561;
+	color: white;
+	border-radius: 2px;
+	padding-left: 10px;
+}
+
+.times {
+	padding-top: 155px;
+	text-align: right;
+	color: silver;
+}
+
+
+@keyframes circles {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+@keyframes example {
+    from {color: green;}
+    to {color: white;}
+}
+
+.animate {
+    animation-name: example;
+    animation-duration: 7s;
+    animation-iteration-count: 2;
+}
+
+.foot {
+	text-align: right;
+	padding-right: 50px;
+}
+
+@media screen and (min-width: 600px) {
+
+	.conteinerhead {
+		background-image: url('images/back3.jpg');
+
+	}
+
+	.item__date :last-child {
+		display: flex;
+		height: 40px;
+		margin: 0;
+		padding-top: 10px;
+		font-size: 45pt;
+		font-family: 'Arial';
+	}
+
+	#oneVoice,
+   	#twoVoice {
+   		width: 130px;
+   	}
+
+   	#morningSun,
+   	#Sun-lunch,
+   	#morning-monday,
+   	#lunch-monday,
+   	#after-monday,
+   	#TueDay,
+   	#Tue-lunch,
+   	#thu-morning,
+   	#thu-lunch,
+   	#friday	{
+		font-size: 12px;
+		background-color: #56bbea;
+		color: white;
+		border-radius: 4px;
+		padding-left: 10px;
+
+
+   	}
+	#morningSun {
+		margin-top: 70px;
+		
+	}
+	#Sun-lunch {
+		margin-top: 40px;
+		padding-bottom: 90px;
+
+	}
+	#morning-monday {
+		margin-top: 140px;
+		padding-bottom: 30px;
+
+
+	}
+	#lunch-monday {
+		margin-top: 20px;
+		padding-bottom: 40px;
+	}
+	#after-monday {
+		margin-top: 25px;
+	}
+	#TueDay {
+		margin-top: 100px;
+	}
+	#Tue-lunch {
+		margin-top: 10px;
+		padding-bottom: 20px; 
+		background-color: orange;
+	}
+	#thu-morning {
+		margin-top: 175px;
+
+	}
+	#thu-lunch {
+		margin-top: 60px;
+		padding-bottom: 100px;
+
+	}
+	#friday {
+		margin-top: 150px;
+
+	}
+	.circle {
+		margin-top: 370px;
+		width: 60px;
+ 		height: 60px;
+ 		display:block;
+ 		border-radius: 50px;
+ 		font-size: 35px; 
+ 		color:#fff;
+ 		line-height: 60px;
+ 		text-align: center;
+
+ 		animation-name: circles;
+    	animation-duration: 4s;
+    	animation-iteration-count: infinite;
+
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+
+	* {
+		border-radius: 3px;
+
+	}
+
+	.conteinerhead {
+	box-shadow: 0 0 30px rgba(0,0,0,0.4);
+	height: 60px;
+	}
+
+	.times {
+		padding: 0px;
+		opacity: 0;
+		height: 0px;
+	}
+
+	.containerDays {
+		display: block;
+	}
+
+
+	.item__apointments {
+		width: 100%;
+		font-size: 15px;
+		color: white;
+		margin-bottom: 50px;
+
+
+	}
+	.dates__item {
+		display: flex;
+	}
+	
+	.item__date  {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+
+		font-size: 17px;
+		margin-left: 40px;
+		width: 60px;
+	}
+
+	
+	#morningSun,
+   	#Sun-lunch,
+   	#morning-monday,
+   	#lunch-monday,
+   	#after-monday,
+   	#TueDay,
+   	#Tue-lunch,
+   	#thu-morning,
+   	#thu-lunch,
+   	#friday	{ 
+   		margin-top: 10px;
+		padding-left: 15px;
+   	}
+
+	#morningSun {
+		padding-top: 50px;
+		
+		background-image: url('images/market.jpg');
+	}
+
+	#Sun-lunch {
+		padding-top: 27px;
+		background-image: url('images/picnic.jpg');
+	}
+	#morning-monday {
+		background-image: url('images/dantist.jpg');
+	}
+	#lunch-monday {
+		color: black;
+		padding-top: 50px;
+		background-image: url('images/haircut.jpg');
+		
+	}
+	#after-monday {
+		display: flex;
+		align-items: flex-end;
+		height: 100px;
+		background-image: url('images/call.jpg');
+	}
+
+	#TueDay,
+	#thu-morning {
+		padding-right: 25px;
+		height: 50px;
+		background-color: lightblue;
+		justify-content: center;
+
+	}
+	.today {
+		color: #3F83F4;
+	}
+
+	.face {	
+		margin-top: 8px;
+		float: right;
+		height: 35px;
+		width: 35px;
+		border-radius: 50%;
+		background-image: url('images/user.jpg');
+
+
+	}
+
+	#Tue-lunch {
+		padding-top: 50px;
+		padding-left: 15px;
+		margin-top: 10px;
+		background-image: url('images/lunch.jpg');
+
+	}
+	#thu-lunch {
+		padding-top: 50px;
+		padding-left: 15px;
+		margin-top: 10px;
+		background-image: url('images/fly.jpg');
+	}
+	.circle {
+
+		width: 60px;
+ 		height: 60px;
+ 		border-radius: 50px;
+ 		font-size: 35px; 
+ 		color:#fff;
+ 		line-height: 60px;
+ 		text-align: center;
+ 		float: right;
+
+ 		animation-name: circles;
+    	animation-duration: 4s;
+    	animation-iteration-count: infinite;
+
+	}
+}
+
